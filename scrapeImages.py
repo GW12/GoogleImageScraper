@@ -1,11 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
-import re
-import urllib3
 import os
-import argparse
 import sys
-import json
+
 
 # adapted from http://stackoverflow.com/questions/20716842/python-download-images-from-google-image-search
 
@@ -50,30 +47,9 @@ def main(query, originalname, max_images):
                 
                 
             count+=1
-
-                
-                
-
-            
-    
-
-        
-##    for i , (img , Type) in enumerate( ActualImages[0:max_images]):
-##	req = requests.get(url)
-##	raw_img = req.read()
-##	if len(Type)==0:
-##	    f = open("img" + "_"+ str(i)+".jpg", 'wb')
-##	else :
-##	    f = open("img" + "_"+ str(i)+"."+Type, 'wb')
-##	    print("Brad")    
-##	    f.write(raw_img)
-##	    f.close()
     
 def user():
     query = input("Search:")
     originalname = input("Foldername:")
     max_images = input("No. of images")
     main(query, max_images, originalname)
-
-
-
